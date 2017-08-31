@@ -1,6 +1,5 @@
 module Openweather2
   class Weather
-
     attr_reader :city, :longitude, :latitude, :pressure, :humidity, :clouds,
                 :temperature, :min_temperature, :max_temperature, :wind_speed,
                 :wind_angle, :sunrise, :sunset
@@ -17,8 +16,8 @@ module Openweather2
       @clouds = json['clouds']['all']
       @wind_speed = json['wind']['speed']
       @wind_angle = json['wind']['deg']
-      @sunrise =  json['sys']['sunrise']
-      @sunset = json['sys']['sunset']
+      @sunrise =  Time.at(json['sys']['sunrise'])
+      @sunset = Time.at(json['sys']['sunset'])
     end
   end
 end
