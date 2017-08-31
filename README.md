@@ -16,6 +16,8 @@ Also you can get some data on the gem response:
 * Clouds
 * Wind speed
 * Wind angle
+* Sunrise Time
+* Sunset Time
 
 You can get your APP ID from the OpenWeatherMap website.
 
@@ -90,4 +92,3 @@ Contributors:
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
